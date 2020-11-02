@@ -65,7 +65,6 @@ cat = Cat.new
 muning.sound(cat)
 muning.chase(cat)
 
-bantay = AnimalActions.new
 dog = Dog.new
-bantay.sound(dog)
-bantay.chase(dog)
+muning.sound(dog)
+muning.chase(dog)
