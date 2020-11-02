@@ -31,43 +31,41 @@ anna = Engineering.new("Anna", "Jones", "Industrial Engineering")
 anna.greeting
 
 #duck-typing
+class AnimalActions
+  def sound(animal)
+    animal.sound
+  end
+
+  def chase(animal)
+    animal.chase
+  end
+end
+
 class Cat  
-    def meow  
-      'Meow!'  
-    end  
-    
-    def chase  
-      'chases mouse'  
-    end  
-  end  
-    
-  class Dog  
-    def bark  
-      'Woof!'  
-    end  
-    def chase  
-      'chases cat'  
-    end  
-  end  
-    
-  class CatSound  
-    def meow  
-      sound  
-  end  
-    
     def sound  
-      'Meow!'  
+      puts 'Meow!'  
     end  
-  end  
     
-  def make_it_meow(cat)  
-    cat.meow  
-  end  
-  puts make_it_meow(Cat.new)  
-  puts make_it_meow(CatSound.new)  
+    def chase  
+      puts 'chases mouse'  
+    end  
+end  
     
-  def make_it_chase(cat)  
-    cat.chase  
-  end  
-  puts make_it_chase(Cat.new)  
-  puts make_it_chase(Dog.new)
+class Dog  
+    def sound  
+      puts 'Woof!'  
+    end  
+    def chase  
+      put 'chases cat'  
+    end  
+end  
+    
+muning = AnimalActions.new
+cat = Cat.new
+muning.sound(cat)
+muning.chase(cat)
+
+bantay = AnimalActions.new
+dog = Dog.new
+bantay.sound(dog)
+muning.chase(dog)
