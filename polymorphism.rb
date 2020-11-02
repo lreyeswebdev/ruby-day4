@@ -68,4 +68,4 @@ muning.chase(cat)
 bantay = AnimalActions.new
 dog = Dog.new
 bantay.sound(dog)
-muning.chase(dog)
+bantay.chase(dog)
