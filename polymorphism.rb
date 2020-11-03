@@ -56,7 +56,7 @@ class Dog
       puts 'Woof!'  
     end  
     def chase  
-      put 'chases cat'  
+      puts 'chases cat'  
     end  
 end  
     
